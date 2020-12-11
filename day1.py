@@ -12,7 +12,7 @@ for idx, line in enumerate(data):
 # O(n) runtime
 target = 2020
 seen = set()
-for idx, line in enumerate(data):
+for line in data:
     diff = target - line
     if diff in seen:
         print(diff * line)
